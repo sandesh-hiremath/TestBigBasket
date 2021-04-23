@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-04-23T13:48:48 IST" name="Default suite" finished-at="2021-04-23T13:49:39 IST" duration-ms="50988">
+  <suite started-at="2021-04-23T15:40:47 IST" name="Default suite" finished-at="2021-04-23T15:43:16 IST" duration-ms="149550">
     <groups>
     </groups>
-    <test started-at="2021-04-23T13:48:48 IST" name="Default test" finished-at="2021-04-23T13:49:39 IST" duration-ms="50988">
+    <test started-at="2021-04-23T15:40:47 IST" name="Default test" finished-at="2021-04-23T15:43:16 IST" duration-ms="149550">
       <class name="addProductToCart.AddRiceToCart">
-        <test-method is-config="true" signature="setUpClass()[pri:0, instance:addProductToCart.AddRiceToCart@7a419da4]" started-at="2021-04-23T13:48:48 IST" name="setUpClass" finished-at="2021-04-23T13:49:21 IST" duration-ms="32594" status="PASS">
+        <test-method is-config="true" signature="setUpClass()[pri:0, instance:addProductToCart.AddRiceToCart@7a419da4]" started-at="2021-04-23T15:40:47 IST" name="setUpClass" finished-at="2021-04-23T15:41:35 IST" duration-ms="48170" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="searchRice()[pri:0, instance:addProductToCart.AddRiceToCart@7a419da4]" started-at="2021-04-23T13:49:21 IST" name="searchRice" finished-at="2021-04-23T13:49:31 IST" duration-ms="10350" status="PASS">
+        <test-method signature="searchRice()[pri:0, instance:addProductToCart.AddRiceToCart@7a419da4]" started-at="2021-04-23T15:41:35 IST" name="searchRice" finished-at="2021-04-23T15:43:02 IST" duration-ms="86481" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchRice -->
-        <test-method signature="addRiceToCart()[pri:1, instance:addProductToCart.AddRiceToCart@7a419da4]" started-at="2021-04-23T13:49:31 IST" name="addRiceToCart" finished-at="2021-04-23T13:49:38 IST" duration-ms="6699" status="PASS">
+        <test-method signature="addRiceToCart()[pri:1, instance:addProductToCart.AddRiceToCart@7a419da4]" started-at="2021-04-23T15:43:02 IST" name="addRiceToCart" finished-at="2021-04-23T15:43:11 IST" duration-ms="8834" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addRiceToCart -->
-        <test-method is-config="true" signature="endExecution()[pri:0, instance:addProductToCart.AddRiceToCart@7a419da4]" started-at="2021-04-23T13:49:38 IST" name="endExecution" finished-at="2021-04-23T13:49:39 IST" duration-ms="1236" status="PASS">
+        <test-method is-config="true" signature="endExecution()[pri:0, instance:addProductToCart.AddRiceToCart@7a419da4]" started-at="2021-04-23T15:43:11 IST" name="endExecution" finished-at="2021-04-23T15:43:16 IST" duration-ms="5436" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endExecution -->

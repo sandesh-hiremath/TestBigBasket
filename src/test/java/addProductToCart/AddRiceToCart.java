@@ -18,12 +18,13 @@ public class AddRiceToCart {
 
 	// Initialize all variables
 	WebDriver driver;
-	String driverName = "webdriver.chrome.driver";
+	String driverNameChrome = "webdriver.chrome.driver";
+	String driverNameGecko = "webdriver.gecko.driver"; 
 	String chromeDriverPath = "\\drivers\\chromedriver.exe";
 	String geckoDriverPath = "\\drivers\\geckodriver.exe";
 	String url = "https://www.bigbasket.com/";
-	String qtyexp = "3";
-	String cartqtyexp = "1 items";
+	String qtyAddedExpected = "3";
+	String cartItemsExpected = "1 items";
 
 	WebElement searchField;
 	WebElement searchSuggestions;
@@ -35,11 +36,11 @@ public class AddRiceToCart {
 	@BeforeClass
 	public void setUpClass() {
 
-		System.setProperty(driverName, System.getProperty("user.dir") + "\\drivers\\chromedriver.exe"); // set path to chromedriver.exe file
+		System.setProperty(driverNameChrome, System.getProperty("user.dir") + chromeDriverPath); // set path to chromedriver.exe file
 		driver = new ChromeDriver(); // instantiate chromeDriver
 
 		// Uncomment to run in Mozilla browser
-		// System.setProperty(driverName,System.getProperty("user.dir") +"\\drivers\\geckodriver.exe"); //set path to geckodriver.exe file
+		// System.setProperty(driverNameGecko,System.getProperty("user.dir") + geckoDriverPath); //set path to geckodriver.exe file
 		// driver = new FirefoxDriver(); //instantiate FirefoxDriver
 
 		driver.manage().window().maximize();
@@ -89,15 +90,15 @@ public class AddRiceToCart {
 
 		quantityCheck = driver.findElement(By.xpath("//div[@class='_2MEFP']")); // Capture quantity field xpath after click on add to cart
 	
-		String qtychk = quantityCheck.getText();
-		System.out.println(qtychk);
-		MainUtil.compareRiceQuantity(qtychk, qtyexp);
+		String qtyAddedActual = quantityCheck.getText();
+		System.out.println(qtyAddedActual);
+		MainUtil.compareRiceQuantity(qtyAddedActual, qtyAddedExpected); //check no.of quantity of rice should be 3
 
 		cartCount = driver.findElement(By.xpath("//div[contains(@class,'1laAA')]/div/span[2]")); // Capture Cart information field xpath
 		
-		String cartqty = cartCount.getText();
-		System.out.println(cartqty);
-		MainUtil.compareCartQuantity(cartqty, cartqtyexp);
+		String cartQtyActual = cartCount.getText();
+		System.out.println(cartQtyActual);
+		MainUtil.compareCartQuantity(cartQtyActual, cartItemsExpected); //Check no..of items in cart should be 1
 
 	}
 
